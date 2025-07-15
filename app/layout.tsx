@@ -15,6 +15,9 @@ const inter = Inter({
 })
 
 export const metadata = {
+   icons: {
+    icon: '/icon.jpg',
+  },
   title: 'Har bir gilamda bir tarix — Sizning uyingiz uchun nafislik va iliqlik!',
   description: 'O‘zbek gilamchilik san’atining zamonaviy talqini. 100% tabiiy materiallar, milliy naqshlar va jahon darajasidagi sifat. Endi gilam tanlash zavqli va oson!',
   openGraph: {
