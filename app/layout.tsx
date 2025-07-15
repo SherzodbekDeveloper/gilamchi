@@ -24,7 +24,7 @@ export const metadata = {
     siteName: 'Gilamchi',
     images: [
       {
-        url: 'https://www.gilamchi.uz/seoImage.jpg',
+        url: 'https://gilamchi.vercel.app/seoImage.jpg',
         width: 1920,
         height: 1080,
         alt: 'Qo‘lda to‘qilgan gilam — milliy dizayn va nafislik',
