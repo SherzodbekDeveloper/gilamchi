@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Hero() {
      return (
-          <section id="asosiy" className="relative h-screen flex items-center justify-center overflow-hidden">
+          <section id="asosiy" className="relative h-screen flex items-center justify-center overflow-hidden scroll-mt-24">
                <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                     style={{

@@ -32,7 +32,7 @@ const Achieve = [
 
 function Achievements() {
      return (
-          <section id='yutuglar' className='py-20 bg-gray-100'>
+          <section id='yutuglar' className='py-20 bg-gray-100 scroll-mt-24'>
                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div>
                          <div className="text-center mb-16">
@@ -43,7 +43,7 @@ function Achievements() {
 
 
                          </div>
-                         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                               {Achieve.map((item) => (
                                    <div key={item.id} className='text-center flex flex-col gap-5'>
                                         <h2 className='text-6xl font-semibold'>{item.number}</h2>

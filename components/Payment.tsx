@@ -51,7 +51,7 @@ const Tarif = [
 
 function Payment() {
      return (
-          <section id='tariflar' className='py-20 bg-white'>
+          <section id='tariflar' className='py-20 bg-white scroll-mt-24'  >
                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div>
                          <div className="text-center mb-16">
@@ -84,6 +84,8 @@ function Payment() {
                               </Card>
                          ))}
                     </div>
+                    <p className='mt-10 text-center text-xl text-black/75'>Bu model barqaror daromad manbaini ta9minlaydi va mijozlarimizga o&apos;z bizneslarini kengaytirish bilan birga, bizning
+                         xizmatlarimizdan samarali foydalanish imkonini beradi.</p>
                </div>
           </section>
      )
