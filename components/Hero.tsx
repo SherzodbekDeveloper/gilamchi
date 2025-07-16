@@ -11,18 +11,17 @@ export default function Hero() {
                     }}
                />
 
-               <div className="absolute inset-0 bg-black/60" />
+               <div className="absolute inset-0 bg-black/80" />
 
                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                        Sifatli Gilamlar
+                         Gilam savdosini 
 
-                         <span className="block text-blue-300">Siz izlagan nafislik!</span>
+                         <span className="block text-blue-300">raqamlashtiring!</span>
                     </h1>
 
                     <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                         Uyingizni bezash uchun eng yaxshi sifatli va chiroyli gilamlarni tanlang. Har bir gilam sizning hayotingizga
-                         qulaylik va go&apos;zallik olib keladi.
+                        Gilam do‘konlari va ishlab chiqaruvchilar uchun raqamli boshqaruv platformasi.
                     </p>
 
                     <Link href="#turlar">
@@ -30,7 +29,7 @@ export default function Hero() {
                               size="lg"
                               className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105"
                          >
-                              Katalogni ko&apos;rish
+                              Hoziroq sinab ko&apos;rish
                          </Button>
                     </Link>
                </div>

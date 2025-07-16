@@ -1,7 +1,8 @@
+import Achievements from '@/components/Achievements'
 import Advantages from '@/components/Advantages'
-import CarpetTypes from '@/components/CarpetTypes'
-import Contact from '@/components/contact'
+import Function from '@/components/Function'
 import Hero from '@/components/Hero'
+import Payment from '@/components/Payment'
 import Footer from '@/components/shared/footer'
 import Navbar from '@/components/shared/navbar'
 import Solution from '@/components/Solution'
@@ -12,10 +13,11 @@ function Page() {
     <>
       <Navbar />
       <Hero />
-      <CarpetTypes />
       <Advantages />
       <Solution />
-      <Contact />
+      <Function />
+      <Achievements />  
+      <Payment />
       <Footer />
 
     </>

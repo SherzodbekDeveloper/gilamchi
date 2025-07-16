@@ -1,46 +1,32 @@
-import { Shield, Award, Truck, HeartHandshake, Star, Clock } from "lucide-react"
+import { Pen, Box, GitCompareArrows } from "lucide-react"
 
 const advantages = [
      {
-          icon: Shield,
-          title: "Kafolat",
-          description: "Barcha mahsulotlarimizga 2 yillik kafolat beramiz",
+          icon: Pen,
+          title: "Qog'ozbozlik",
+          description: "Hisob-kitoblar va hujjatlarni qo'lda yuritish, xatolar va samarasizlikka olib keladi.",
      },
      {
-          icon: Award,
-          title: "Yuqori Sifat",
-          description: "Faqat eng yaxshi materiallardan tayyorlangan gilamlar",
+          icon: Box,
+          title: "Zaxira Yo'qotish",
+          description: "Ombor nazoratining sustligi tufayli mahsulot yo8qolishi va ortiqcha xarajatlar yuzaga keladi.",
      },
      {
-          icon: Truck,
-          title: "Tez Yetkazib Berish",
-          description: "Butun O'zbekiston bo'ylab 24 soat ichida yetkazib berish",
-     },
-     {
-          icon: HeartHandshake,
-          title: "Professional Xizmat",
-          description: "Tajribali mutaxassislardan maslahat va yordam",
-     },
-     {
-          icon: Star,
-          title: "Mijozlar Bahosi",
-          description: "10,000+ mamnun mijozlar va 5 yulduzli baholash",
-     },
-     {
-          icon: Clock,
-          title: "24/7 Qo'llab-quvvatlash",
-          description: "Har qanday vaqtda savol va murojaatlaringizni qabul qilamiz",
+          icon: GitCompareArrows,
+          title: "Nazorat Yo'qligi",
+          description: "Sotuvlar, mijozlar va to'lovlar bo'yicha to'liq ma'lumotlarning yetishmasligi.",
      },
 ]
 
 export default function Advantages() {
      return (
-          <section id="afzalliklar" className="py-20 bg-white">
+          <section id="muammolar" className="py-20 bg-white">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Bizning Afzalliklarimiz</h2>
+                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Hozirgi Muammolar</h2>
                          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                              Nima uchun minglab mijozlar bizni tanlaganini bilib oling
+                            Ko‘pchilik bizneslar hanuzgacha quyidagi muammolar bilan kurashmoqda. Siz ularni avtomatlashtirish orqali butunlay bartaraf etishingiz mumkin.
+
                          </p>
                     </div>
 

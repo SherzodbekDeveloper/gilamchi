@@ -13,10 +13,10 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { href: "#asosiy", label: "Asosiy" },
-  { href: "#turlar", label: "Turlar" },
-  { href: "#afzalliklar", label: "Afzalliklar" },
+  { href: "#muammolar", label: "Muammolar" },
   { href: "#yechimlar", label: "Yechimlar" },
-  { href: "#aloqa", label: "Aloqa" },
+  { href: "#funksiyalar", label: "Funksiyalar" },
+  { href: "#tariflar", label: "Tariflar" },
 ]
 
 function Navbar() {
@@ -99,7 +99,7 @@ function Navbar() {
 
           <Link href="#aloqa" className="hidden md:block">
             <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 cursor-pointer">
-              Buyurtma berish
+           Sinab ko&apos;rish
             </Button>
           </Link>
 
