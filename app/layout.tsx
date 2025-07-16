@@ -30,7 +30,7 @@ export const metadata = {
     siteName: 'Gilamchi',
     images: [
       {
-        url: 'https://gilamchi.vercel.app/seoImage.jpg',
+        url: 'https://gilamchi.vercel.app/icon.png',
         width: 1920,
         height: 1080,
         alt: 'Gilamchi platformasi — raqamli boshqaruv tizimi',
@@ -44,7 +44,7 @@ export const metadata = {
     title: 'Gilamchi — Gilam biznesingiz uchun zamonaviy platforma',
     description:
       'Mahsulotlar, foydalanuvchilar, statistika va omborni raqamli boshqaring. Gilam do‘konlari uchun yaratilgan maxsus platforma.',
-    images: ['https://gilamchi.vercel.app/seoImage.jpg'],
+    images: ['https://gilamchi.vercel.app/icon.png'],
   },
 }
 
