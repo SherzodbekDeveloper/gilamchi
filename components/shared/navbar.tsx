@@ -105,20 +105,15 @@ function Navbar() {
 
             <Button
               variant="ghost"
-              size="icon"
-              className="lg:hidden relative z-50 hover:bg-blue-50 transition-colors"
+              className="lg:hidden relative z-50 hover:bg-blue-50 transition-colors cursor-pointer rounded-sm"
               onClick={handleMobileMenuToggle}
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="relative w-2 h-10 flex items-center justify-center ">
                 <MenuIcon
-                  className={`absolute inset-0 w-6 h-6 text-center transition-all duration-300 ${isOpen ? "rotate-90 opacity-0" : "rotate-0 opacity-100"
-                    }`}
+                  className={`w-10 h-10 transition-all duration-300 `}
                 />
-                <X
-                  className={`absolute inset-0 transition-all duration-300 ${isOpen ? "rotate-0 opacity-100" : "-rotate-90 opacity-0"
-                    }`}
-                />
+                
               </div>
             </Button>
           </div>
@@ -138,7 +133,7 @@ function Navbar() {
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-6 border-b border-gray-100">
             <Image src={'/logo.png'} width={100} height={100} alt="logo" />
-            <Button variant="ghost" size="icon" onClick={handleMobileMenuToggle} className="hover:bg-gray-100">
+            <Button variant="ghost" size="icon" onClick={handleMobileMenuToggle} className="hover:bg-gray-100 cursor-pointer rounded-sm">
               <X className="w-5 h-5" />
             </Button>
           </div>
