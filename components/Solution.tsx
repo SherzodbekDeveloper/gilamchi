@@ -42,7 +42,7 @@ function Solution() {
           <div className='lg:max-w-xl w-full lg:order-1 order-2'>
             <p className='text-xl font-medium'><a href='' className='text-blue-900 cursor-pointer'>Gilamchi.uz</a> gilam savdosining barcha jihatlarini qamrab oluvchi
               yagona, integratsiyalashgan onlayn platformadir. Biz INREPORT
-              tajribasini gilam sanoatining o8ziga xos talablariga moslashtirdik.</p>
+              tajribasini gilam sanoatining o&apos;ziga xos talablariga moslashtirdik.</p>
             <div className='flex flex-col gap-6 mt-5 '>
               {Solutions.map((item) => (
                 <div key={item.id} className='flex items-center gap-3'>

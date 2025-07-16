@@ -9,7 +9,7 @@ const advantages = [
      {
           icon: Box,
           title: "Zaxira Yo'qotish",
-          description: "Ombor nazoratining sustligi tufayli mahsulot yo8qolishi va ortiqcha xarajatlar yuzaga keladi.",
+          description: "Ombor nazoratining sustligi tufayli mahsulot yo'qolishi va ortiqcha xarajatlar yuzaga keladi.",
      },
      {
           icon: GitCompareArrows,
