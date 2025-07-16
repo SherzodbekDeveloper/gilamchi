@@ -11,7 +11,7 @@ export default function Hero() {
                     }}
                />
 
-               <div className="absolute inset-0 bg-blue-900/70" />
+               <div className="absolute inset-0 bg-blue-950/90" />
 
                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
