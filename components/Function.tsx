@@ -5,7 +5,7 @@ const advantages = [
      {
           icon: Ruler,
           title: "Kvadrat metr hisobi",
-          description: "Har bir gilamning o8lchami va narxini avtomatik hisoblash.",
+          description: "Har bir gilamning o'lchami va narxini avtomatik hisoblash.",
      },
      {
           icon: Warehouse,
