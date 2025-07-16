@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import AutoScrollText from './shared/AutoScrollText'
 import AutoScrollLogos from './shared/AutoScrollLogos'
+import Link from 'next/link'
 
 function Support() {
      return (
@@ -16,7 +17,9 @@ function Support() {
                          </div>
                          <div className='max-w-[530px] w-full flex flex-col gap-2'>
                               <p className='text-2xl font-medium'>Bizning menejerlarimiz sizga tovarlarni kiritish, uskunalarni ulash, xodimlarni o&apos;rgatishda yordam beradi, shuningdek, 10 kunlik bepul foydalanish muddatini taqdim etadi!</p>
-                              <Button variant={'link'} className=' font-semibold text-lg w-fit'> Sinab ko&apos;rish</Button>
+                              <Link href="https://www.gilamchi.uz/" target="_blank">
+                                   <Button variant={'link'} className=' font-semibold text-lg w-fit'> Sinab ko&apos;rish</Button>
+                              </Link>
                          </div>
                     </div>
                </section>

@@ -97,11 +97,11 @@ function Navbar() {
             ))}
           </nav>
           <div className="flex  gap-2 items-center">
-            <Link href="/signup" className="hidden md:block">
+            <a href="https://www.gilamchi.uz/" target="_blank" className="md:block hidden">
               <Button variant={'link'}>
                 Sinab ko&apos;rish
               </Button>
-            </Link>
+            </a>
 
             <Button
               variant="ghost"
@@ -113,7 +113,7 @@ function Navbar() {
                 <MenuIcon
                   className={`w-10 h-10 transition-all duration-300 `}
                 />
-                
+
               </div>
             </Button>
           </div>
@@ -158,11 +158,12 @@ function Navbar() {
           </nav>
 
           <div className="p-6 border-t md:hidden block border-gray-100">
-            <Link href="/signup" onClick={handleMobileLinkClick}>
+            <a href="https://www.gilamchi.uz/" target="_blank" onClick={handleMobileLinkClick}>
               <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white rounded-full">
                 Sinab ko&apos;rish
               </Button>
-            </Link>
+            </a>
+
           </div>
         </div>
       </div>

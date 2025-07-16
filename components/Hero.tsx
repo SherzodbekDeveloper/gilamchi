@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export default function Hero() {
      return (
@@ -15,22 +14,24 @@ export default function Hero() {
 
                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                         Gilam savdosini 
+                         Gilam savdosini
 
                          <span className="block text-blue-300">raqamlashtiring!</span>
                     </h1>
 
                     <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-                        Gilam do‘konlari va ishlab chiqaruvchilar uchun raqamli boshqaruv platformasi.
+                         Gilam do‘konlari va ishlab chiqaruvchilar uchun raqamli boshqaruv platformasi.
                     </p>
 
-                    <Link href="/signup">
+                    <a href="https://www.gilamchi.uz/" target="_blank">
+
                          <Button variant={'link'} className="bg-white text-black hover:bg-white/80"
                               size="lg"
                          >
                               Hoziroq sinab ko&apos;rish
                          </Button>
-                    </Link>
+                    </a>
+
                </div>
 
                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
