@@ -15,14 +15,17 @@ const inter = Inter({
 })
 
 export const metadata = {
-   icons: {
+  metadataBase: new URL('https://www.gilamchi.uz'),
+  title: 'Gilamchi Platforma — Gilam biznesingizni raqamli boshqaring',
+  description:
+    'Gilam do‘konlari va ishlab chiqaruvchilar uchun zamonaviy boshqaruv platformasi. Ombor nazorati, mahsulotlarni raqamlashtirish, foydalanuvchilar tahlili va ko‘plab imkoniyatlar bir joyda.',
+  icons: {
     icon: '/icon.jpg',
   },
-  title: 'Har bir gilamda bir tarix — Sizning uyingiz uchun nafislik va iliqlik!',
-  description: 'O‘zbek gilamchilik san’atining zamonaviy talqini. 100% tabiiy materiallar, milliy naqshlar va jahon darajasidagi sifat. Endi gilam tanlash zavqli va oson!',
   openGraph: {
-    title: 'Har bir gilamda bir tarix — Nafislik va Iliqlik',
-    description: 'Zamonaviy O‘zbek gilamchilik san’ati — 100% tabiiy material, milliy naqshlar va jahon sifati.',
+    title: 'Gilamchi — Gilam biznesingiz uchun zamonaviy platforma',
+    description:
+      'Gilam ishlab chiqaruvchilari va do‘konlari uchun ombor nazorati, mahsulot boshqaruvi va foydalanuvchi tizimi.',
     url: 'https://www.gilamchi.uz/',
     siteName: 'Gilamchi',
     images: [
@@ -30,11 +33,18 @@ export const metadata = {
         url: 'https://gilamchi.vercel.app/seoImage.jpg',
         width: 1920,
         height: 1080,
-        alt: 'Qo‘lda to‘qilgan gilam — milliy dizayn va nafislik',
+        alt: 'Gilamchi platformasi — raqamli boshqaruv tizimi',
       },
     ],
     locale: 'uz_UZ',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gilamchi — Gilam biznesingiz uchun zamonaviy platforma',
+    description:
+      'Mahsulotlar, foydalanuvchilar, statistika va omborni raqamli boshqaring. Gilam do‘konlari uchun yaratilgan maxsus platforma.',
+    images: ['https://gilamchi.vercel.app/seoImage.jpg'],
   },
 }
 
@@ -44,11 +54,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="uz">
+      <body className={`${playfair.variable} ${inter.variable}`}>
         {children}
       </body>
     </html>
-  );
+  )
 }
