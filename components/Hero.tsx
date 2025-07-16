@@ -11,7 +11,7 @@ export default function Hero() {
                     }}
                />
 
-               <div className="absolute inset-0 bg-black/80" />
+               <div className="absolute inset-0 bg-blue-900/70" />
 
                <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -25,9 +25,8 @@ export default function Hero() {
                     </p>
 
                     <Link href="/signup">
-                         <Button
+                         <Button variant={'link'} className="bg-white text-black hover:bg-white/80"
                               size="lg"
-                              className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105"
                          >
                               Hoziroq sinab ko&apos;rish
                          </Button>

@@ -98,7 +98,7 @@ function Navbar() {
           </nav>
           <div className="flex  gap-2 items-center">
             <Link href="/signup" className="hidden md:block">
-              <Button className="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 cursor-pointer">
+              <Button variant={'link'}>
                 Sinab ko&apos;rish
               </Button>
             </Link>
@@ -159,7 +159,7 @@ function Navbar() {
 
           <div className="p-6 border-t md:hidden block border-gray-100">
             <Link href="/signup" onClick={handleMobileLinkClick}>
-              <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white py-3 rounded-full">
+              <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white rounded-full">
                 Sinab ko&apos;rish
               </Button>
             </Link>
