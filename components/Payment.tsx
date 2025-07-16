@@ -3,6 +3,7 @@ import { Card } from './ui/card'
 import { Check } from 'lucide-react'
 import { Button } from './ui/button'
 import { Separator } from './ui/separator'
+import Link from 'next/link'
 
 
 const Tarif = [
@@ -68,7 +69,9 @@ function Payment() {
                               <Card key={item.id} className='py-6 px-6 flex flex-col gap-4 rounded-3xl'>
                                    <h3 className='text-xl font-semibold'>{item.tarif}</h3>
                                    <h2 className='text-[40px] font-bold'>{item.cost} <span className='text-sm font-medium text-black/55'>so‘m /oy</span></h2>
-                                   <Button variant={'link'} className='rounded-3xl font-bold py-5 text-xl'>Obuna bo&apos;lish</Button>
+                                   <Link href={'/signup'}>
+                                        <Button variant={'link'} className='rounded-3xl font-bold py-5 text-xl'>Obuna bo&apos;lish</Button>
+                                   </Link>
                                    <Separator />
                                    <div className='flex flex-col gap-4'>
                                         {

@@ -24,7 +24,7 @@ export default function Hero() {
                         Gilam do‘konlari va ishlab chiqaruvchilar uchun raqamli boshqaruv platformasi.
                     </p>
 
-                    <Link href="#turlar">
+                    <Link href="/signup">
                          <Button
                               size="lg"
                               className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105"
