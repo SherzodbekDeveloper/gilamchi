@@ -1,4 +1,12 @@
+"use client"
+
+
 import { Pen, Box, GitCompareArrows } from "lucide-react"
+import { useEffect } from "react"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 
 const advantages = [
      {
@@ -19,13 +27,22 @@ const advantages = [
 ]
 
 export default function Advantages() {
+
+     useEffect(() => {
+          AOS.init({
+               duration: 1000,
+               once: true,
+          })
+     }, [])
+
+
      return (
           <section id="muammolar" className="py-20 bg-white scroll-mt-24">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Hozirgi Muammolar</h2>
-                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                            Ko‘pchilik bizneslar hanuzgacha quyidagi muammolar bilan kurashmoqda. Siz ularni avtomatlashtirish orqali butunlay bartaraf etishingiz mumkin.
+                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Hozirgi Muammolar</h2>
+                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                              Ko‘pchilik bizneslar hanuzgacha quyidagi muammolar bilan kurashmoqda. Siz ularni avtomatlashtirish orqali butunlay bartaraf etishingiz mumkin.
 
                          </p>
                     </div>
@@ -34,7 +51,7 @@ export default function Advantages() {
                          {advantages.map((advantage, index) => {
                               const IconComponent = advantage.icon
                               return (
-                                   <div
+                                   <div data-aos="fade-up"
                                         key={index}
                                         className="group text-center p-8 rounded-2xl hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                                         style={{

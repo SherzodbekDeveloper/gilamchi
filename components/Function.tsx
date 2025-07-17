@@ -1,5 +1,11 @@
+"use client"
+
 import { Ruler, Warehouse, Tag, User2, CircleDollarSign, TabletSmartphone } from "lucide-react"
 import { Card, CardContent } from "./ui/card"
+import { useEffect } from "react"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const advantages = [
      {
@@ -35,12 +41,18 @@ const advantages = [
 ]
 
 export default function Function() {
+     useEffect(() => {
+          AOS.init({
+               duration: 1000,
+               once: true,
+          })
+     }, [])
      return (
           <section id="funksiyalar" className="py-20 bg-white scroll-mt-24">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Mahsulot Funksiyalari</h2>
-                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Mahsulot Funksiyalari</h2>
+                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
                               Nima uchun minglab mijozlar bizni tanlaganini bilib oling
                          </p>
                     </div>
@@ -49,9 +61,9 @@ export default function Function() {
                          {advantages.map((advantage, index) => {
                               const IconComponent = advantage.icon
                               return (
-                                   <Card
+                                   <Card data-aos="fade-up"
                                         key={index}
-                                        className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white border-0"
+                                        className="group hover:shadow-xl transition-all duration-300 ease-linear hover:-translate-y-1 bg-white border-0"
                                    >
                                         <CardContent className="p-6 text-left">
                                              <div className="inline-flex items-center justify-center w-14 h-14 hover:bg-blue-900 bg-white hover:text-white text-blue-900  rounded-full mb-4 group-hover:text-white group-hover:bg-blue-800 group-hover:scale-110 transition-all duration-300">

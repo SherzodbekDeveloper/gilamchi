@@ -5,6 +5,9 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { Card } from './ui/card'
+import { useEffect } from "react"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const testimonials = [
      {
@@ -44,17 +47,23 @@ const testimonials = [
 
 
 export default function TestimonialsCarousel() {
+     useEffect(() => {
+          AOS.init({
+               duration: 1000,
+               once: true,
+          })
+     }, [])
      return (
           <section id='yutuglar' className='py-20 bg-white scroll-mt-24 px-4 sm:px-6 lg:px-8 '>
                <div className="text-center mb-16 ">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Mijozlarimiz fikri</h2>
-                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Mijozlarimiz fikri</h2>
+                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
                          Platformamizdan foydalangan mijozlarimiz qanday taassurot olganlarini quyida o‘qing.
                     </p>
 
 
                </div>
-               <Swiper className='max-w-7xl mx-auto '
+               <Swiper className='max-w-7xl mx-auto ' data-aos="fade-up"
                     modules={[Autoplay, Pagination]}
                     spaceBetween={30}
                     autoplay={{
