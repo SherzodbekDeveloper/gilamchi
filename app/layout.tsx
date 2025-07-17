@@ -1,5 +1,7 @@
+import Navbar from '@/components/shared/navbar'
 import './globals.css'
 import { Playfair_Display, Inter } from 'next/font/google'
+import Footer from '@/components/shared/footer'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -56,7 +58,10 @@ export default function RootLayout({
   return (
     <html lang="uz">
       <body className={`${playfair.variable} ${inter.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
+
       </body>
     </html>
   )

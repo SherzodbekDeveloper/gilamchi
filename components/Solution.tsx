@@ -52,7 +52,7 @@ function Solution() {
         <div className=' items-start flex flex-col lg:flex-row justify-between gap-4 ' >
           <div className='lg:max-w-xl w-full lg:order-1 order-2'>
             <p className='text-xl font-medium' data-aos="fade-up"><a href='' className='text-blue-900 cursor-pointer'>Gilamchi.uz</a> gilam savdosining barcha jihatlarini qamrab oluvchi
-              yagona, integratsiyalashgan onlayn platformadir. Biz INREPORT
+              yagona, integratsiyalashgan onlayn platformadir. Biz GILAMCHI
               tajribasini gilam sanoatining o&apos;ziga xos talablariga moslashtirdik.</p>
             <div className='flex flex-col gap-6 mt-5 '>
               {Solutions.map((item) => (
@@ -63,7 +63,7 @@ function Solution() {
               ))}
             </div>
           </div>
-          <div className='w-full lg:order-2 order-1 overflow-hidden rounded-xl hover:-translate-y-2 hover:border-blue-900 hover:border-2 transition-transform duration-300' data-aos="fade-up">
+          <div className='w-full lg:order-2 order-1 overflow-hidden rounded-xl hover:-translate-y-2 hover:border-blue-900 hover:border-2 !transition-transform duration-300' data-aos="fade-up">
             <Image src={'/solution.png'} width={400} height={400} alt='solution' className='w-full rounded-xl transition-transform duration-300  hover:scale-105 ' />
           </div>
         </div>

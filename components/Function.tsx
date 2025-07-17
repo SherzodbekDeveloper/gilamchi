@@ -63,7 +63,7 @@ export default function Function() {
                               return (
                                    <Card data-aos="fade-up"
                                         key={index}
-                                        className="group hover:shadow-xl transition-all duration-300 ease-linear hover:-translate-y-1 bg-white border-0"
+                                        className="group hover:shadow-xl !transition-all duration-300 ease-linear hover:-translate-y-1 bg-white border-0"
                                    >
                                         <CardContent className="p-6 text-left">
                                              <div className="inline-flex items-center justify-center w-14 h-14 hover:bg-blue-900 bg-white hover:text-white text-blue-900  rounded-full mb-4 group-hover:text-white group-hover:bg-blue-800 group-hover:scale-110 transition-all duration-300">

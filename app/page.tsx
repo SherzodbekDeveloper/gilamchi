@@ -3,8 +3,7 @@ import Advantages from '@/components/Advantages'
 import Function from '@/components/Function'
 import Hero from '@/components/Hero'
 import Payment from '@/components/Payment'
-import Footer from '@/components/shared/footer'
-import Navbar from '@/components/shared/navbar'
+import AutoScrollLogos from '@/components/shared/AutoScrollLogos'
 import Solution from '@/components/Solution'
 import Support from '@/components/Support'
 import TestimonialsCarousel from '@/components/TestimonialsCarousel'
@@ -13,7 +12,6 @@ import React from 'react'
 function Page() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Advantages />
       <Solution />
@@ -22,7 +20,8 @@ function Page() {
       <TestimonialsCarousel />
       <Support />
       <Payment />
-      <Footer />
+      <AutoScrollLogos />
+
 
     </>
   )

@@ -51,12 +51,14 @@ export default function Advantages() {
                          {advantages.map((advantage, index) => {
                               const IconComponent = advantage.icon
                               return (
-                                   <div data-aos="fade-up"
+                                   <div
                                         key={index}
-                                        className="group text-center p-8 rounded-2xl hover:bg-blue-50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                                        className="group text-center p-8 rounded-2xl hover:bg-blue-50 !transition-all !duration-300 hover:shadow-lg hover:-translate-y-1"
                                         style={{
                                              animationDelay: `${index * 100}ms`,
                                         }}
+
+                                        data-aos="fade-up"
                                    >
                                         <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900 text-white rounded-full mb-6 group-hover:bg-blue-800 group-hover:scale-110 transition-all duration-300">
                                              <IconComponent className="w-8 h-8" />

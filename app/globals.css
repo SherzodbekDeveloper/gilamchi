@@ -1,11 +1,16 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+* {
+	font-family: 'Michroma', sans-serif;
+	font-style: normal;
 }
 
 @theme inline {
