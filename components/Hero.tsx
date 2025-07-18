@@ -23,7 +23,7 @@ export default function Hero() {
                     }}
                />
 
-               <div className="absolute inset-0 bg-blue-950/90" />
+               <div className="absolute inset-0 bg-blue-950/75" />
 
                <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 flex justify-start">
                     <div className="text-white max-w-7xl w-full mx-auto text-left flex flex-col items-start">

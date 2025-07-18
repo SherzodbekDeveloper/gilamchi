@@ -1,12 +1,15 @@
 "use client"
 
 import type React from "react"
+import { useState } from "react"
 import { toast } from "sonner"
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
 
-  const formData = new FormData(e.currentTarget)
+  const form = e.currentTarget
+
+  const formData = new FormData(form)
   const name = formData.get("name") as string
   const email = formData.get("email") as string
   const phone = formData.get("phone") as string
@@ -36,8 +39,9 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         parse_mode: "HTML",
       }),
     })
+
     toast("Xabaringiz yuborildi!")
-    e.currentTarget.reset()
+    form.reset()
   } catch (err) {
     toast("Xatolik yuz berdi!")
     console.error(err)
@@ -45,14 +49,16 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 }
 
 function Page() {
+  const [phone, setPhone] = useState("+998")
+
   return (
-    <section className=" py-20 px-4">
+    <section className="py-20 px-4">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Aloqa</h2>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Biz bilan bog&apos;laning.</p>
       </div>
 
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl  ">
+      <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl">
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
@@ -70,13 +76,22 @@ function Page() {
               required
             />
           </div>
+
           <input
-            type="tel"
+            type="text"
             name="phone"
             placeholder="Telefon raqamingiz"
             className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            inputMode="numeric"
             required
+            value={phone}
+            onChange={(e) => {
+              const input = e.target.value.replace(/[^\d]/g, "")
+              const withoutCode = input.startsWith("998") ? input.slice(3) : input
+              setPhone(`+998${withoutCode.slice(0, 9)}`)
+            }}
           />
+
           <textarea
             name="message"
             rows={5}
@@ -84,6 +99,7 @@ function Page() {
             className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           ></textarea>
+
           <button
             type="submit"
             className="w-full bg-blue-900 text-white py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
