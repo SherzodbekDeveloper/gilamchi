@@ -27,19 +27,21 @@ export default function Hero() {
 
                <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 flex justify-start">
                     <div className="text-white max-w-7xl w-full mx-auto text-left flex flex-col items-start">
-                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up" data-aos-duration="1000">
                               Gilam savdosini
                               <span  className="block text-blue-300">raqamlashtiring!</span>
                          </h1>
 
-                         <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl leading-relaxed" data-aos="fade-up">
+                         <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-duration="2000"
+>
                               Gilam do‘konlari va ishlab chiqaruvchilar uchun raqamli boshqaruv platformasi.
                          </p>
 
-                         <div className="flex gap-2 items-center flex-wrap justify-start">
+                         <div className="flex gap-2 items-center flex-wrap justify-start" data-aos="fade-up" data-aos-duration="2500"
+>
                               <a href="https://www.gilamchi.uz/" target="_blank">
-                                   <Button variant={'link'} className="bg-white text-black hover:bg-white/80"
-                                        size="lg" data-aos="fade-up"
+                                   <Button  variant={'link'} className="bg-white text-black hover:bg-white/80 md:text-xl text-lg"
+                                        size="lg" 
                                    >
                                         Bepul boshlang
                                    </Button>

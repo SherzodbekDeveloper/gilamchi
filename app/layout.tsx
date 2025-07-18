@@ -2,6 +2,7 @@ import Navbar from '@/components/shared/navbar'
 import './globals.css'
 import { Playfair_Display, Inter } from 'next/font/google'
 import Footer from '@/components/shared/footer'
+import { Toaster } from '@/components/ui/sonner'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -60,6 +61,8 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${inter.variable}`}>
         <Navbar />
         {children}
+         <Toaster position='top-center' />
+
         <Footer />
 
       </body>

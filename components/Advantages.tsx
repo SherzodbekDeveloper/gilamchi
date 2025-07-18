@@ -2,9 +2,6 @@
 
 
 import { Pen, Box, GitCompareArrows } from "lucide-react"
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 
 
@@ -28,13 +25,7 @@ const advantages = [
 
 export default function Advantages() {
 
-     useEffect(() => {
-          AOS.init({
-               duration: 1000,
-               once: true,
-          })
-     }, [])
-
+ 
 
      return (
           <section id="muammolar" className="py-20 bg-white scroll-mt-24">

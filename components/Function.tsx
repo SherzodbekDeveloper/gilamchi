@@ -1,10 +1,7 @@
-"use client"
 
 import { Ruler, Warehouse, Tag, User2, CircleDollarSign, TabletSmartphone } from "lucide-react"
 import { Card, CardContent } from "./ui/card"
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
 
 
 const advantages = [
@@ -41,12 +38,7 @@ const advantages = [
 ]
 
 export default function Function() {
-     useEffect(() => {
-          AOS.init({
-               duration: 1000,
-               once: true,
-          })
-     }, [])
+   
      return (
           <section id="funksiyalar" className="py-20 bg-white scroll-mt-24">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

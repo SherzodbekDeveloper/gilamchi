@@ -1,11 +1,7 @@
-"use client"
 
 import { CheckCircle2 } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 
 const Solutions = [
@@ -32,12 +28,7 @@ const Solutions = [
 ]
 
 function Solution() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    })
-  }, [])
+ 
   return (
     <section id='yechimlar' className='py-20 bg-gray-100 scroll-mt-24'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>

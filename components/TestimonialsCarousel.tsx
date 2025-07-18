@@ -5,9 +5,7 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { Card } from './ui/card'
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
 
 const testimonials = [
      {
@@ -47,12 +45,7 @@ const testimonials = [
 
 
 export default function TestimonialsCarousel() {
-     useEffect(() => {
-          AOS.init({
-               duration: 1000,
-               once: true,
-          })
-     }, [])
+    
      return (
           <section id='yutuglar' className='py-20 bg-white scroll-mt-24 px-4 sm:px-6 lg:px-8 '>
                <div className="text-center mb-16 ">

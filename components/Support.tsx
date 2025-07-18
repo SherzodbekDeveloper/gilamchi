@@ -3,17 +3,10 @@ import React from 'react'
 import { Button } from './ui/button'
 import AutoScrollText from './shared/AutoScrollText'
 import Link from 'next/link'
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
 
 function Support() {
-     useEffect(() => {
-          AOS.init({
-               duration: 1000,
-               once: true,
-          })
-     }, [])
+  
      return (
           <>
                <section className='py-20 bg-gray-100 scroll-mt-24' >

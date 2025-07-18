@@ -84,7 +84,8 @@ function Navbar() {
                               <Image src={'/logo.png'} alt="logo" width={130} height={100} />
                          </Link>
 
-                         <nav className="hidden lg:flex space-x-8" role="navigation">
+                         <div className="flex gap-2 items-center">
+                         <nav className="hidden lg:flex space-x-8 mr-4" role="navigation">
                               {navLinks.slice(0, 4).map((link) => (
                                    <Link
                                         key={link.href}
@@ -96,7 +97,6 @@ function Navbar() {
                                    </Link>
                               ))}
                          </nav>
-                         <div className="flex  gap-2 items-center">
                               <a href="https://www.gilamchi.uz/" target="_blank" className="md:block hidden">
                                    <Button variant={'link'}>
                                         Hisobga kirish

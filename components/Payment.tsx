@@ -1,13 +1,12 @@
 "use client"
+
 import { useState } from "react"
 import { Card } from "./ui/card"
 import { Check } from "lucide-react"
 import { Button } from "./ui/button"
 import { Separator } from "./ui/separator"
 import Link from "next/link"
-import { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
+
 
 const Tarif = [
      {
@@ -55,12 +54,6 @@ const Tarif = [
 function Payment() {
      const [billingPeriod, setBillingPeriod] = useState<"monthly" | "yearly">("monthly")
 
-     useEffect(() => {
-          AOS.init({
-               duration: 1000,
-               once: true,
-          })
-     }, [])
 
      const calculatePrice = (monthlyCost: string) => {
           const numericCost = Number.parseInt(monthlyCost.replace(/\s/g, ""))
@@ -93,10 +86,10 @@ function Payment() {
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div>
                          <div className="text-center mb-16">
-                              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">
+                              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" >
                                    Tariflar
                               </h2>
-                              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" >
                                    Har bir mijoz — o&apos;ziga xos. Shu sababli biz{" "}
                                    <span className="font-bold">kichik startaplardan tortib, yirik korxonalar</span>gacha bo&apos;lgan ehtiyojlarga
                                    mos <span className="font-bold">uch xil obuna rejasini</span> taklif etamiz. Qaysi bosqichda
@@ -105,7 +98,7 @@ function Payment() {
                          </div>
                     </div>
 
-                    <div className="flex justify-center mb-12" data-aos="fade-up">
+                    <div className="flex justify-center mb-12" >
                          <div className="bg-gray-100 p-1 rounded-full flex">
                               <button
                                    onClick={() => setBillingPeriod("monthly")}
@@ -129,7 +122,7 @@ function Payment() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                          {Tarif.map((item) => (
-                              <Card key={item.id} className="py-6 px-6 flex flex-col gap-4 rounded-3xl" data-aos="fade-up">
+                              <Card key={item.id} className="py-6 px-6 flex flex-col gap-4 rounded-3xl" >
                                    <h3 className="text-xl font-semibold">{item.tarif}</h3>
                                    <h2 className="text-4xl font-bold">
                                         {calculateMonthlyPrice(calculatePrice(item.cost))} <span className="text-sm font-medium text-black/55">UZS / 30 kun</span>
@@ -157,7 +150,7 @@ function Payment() {
                               </Card>
                          ))}
                     </div>
-                    <p className="mt-10 text-center text-xl text-black/75" data-aos="fade-up">
+                    <p className="mt-10 text-center text-xl text-black/75" >
                          Bu model barqaror daromad manbaini ta&apos;minlaydi va mijozlarimizga o&apos;z bizneslarini kengaytirish bilan
                          birga, bizning xizmatlarimizdan samarali foydalanish imkonini beradi.
                     </p>
