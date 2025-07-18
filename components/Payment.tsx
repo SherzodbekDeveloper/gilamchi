@@ -150,10 +150,7 @@ function Payment() {
                               </Card>
                          ))}
                     </div>
-                    <p className="mt-10 text-center text-xl text-black/75" >
-                         Bu model barqaror daromad manbaini ta&apos;minlaydi va mijozlarimizga o&apos;z bizneslarini kengaytirish bilan
-                         birga, bizning xizmatlarimizdan samarali foydalanish imkonini beradi.
-                    </p>
+                  
                </div>
           </section>
      )
