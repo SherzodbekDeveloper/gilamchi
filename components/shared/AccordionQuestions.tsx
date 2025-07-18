@@ -17,10 +17,10 @@ function AccordionQuestions() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                          <div>
                               <div className="text-center mb-16">
-                                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">
+                                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" >
                                         Ko&apos;p beriladigan savollar
                                    </h2>
-                                   <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                                   <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" >
                                         Bizning mijozlarimiz tomonidan tez-tez so‘raladigan savollarni shu yerda jamladik. Agar sizda qo‘shimcha savollar bo‘lsa, biz bilan bog‘laning — yordam berishga tayyormiz.
 
                                    </p>
@@ -28,7 +28,7 @@ function AccordionQuestions() {
                          </div>
                          <div className='flex flex-col gap-2'>
 
-                              <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                              <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer '>Menga qaysi tarif mos keladi?</AccordionTrigger>
                                         <AccordionContent>
@@ -36,7 +36,7 @@ function AccordionQuestions() {
                                         </AccordionContent>
                                    </AccordionItem>
                               </Accordion>
-                              <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                              <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer'>Agar GILAMCHI menga mos kelmasa-chi? Tarifni sotib olishdan oldin sinab ko&apos;rishim mumkinmi?</AccordionTrigger>
                                         <AccordionContent>
@@ -44,7 +44,7 @@ function AccordionQuestions() {
                                         </AccordionContent>
                                    </AccordionItem>
                               </Accordion>
-                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer'>Nima uchun men dasturni darhol sotib ololmayman va nega oylik abonent to&apos;lovini to&apos;lashim kerak?</AccordionTrigger>
                                         <AccordionContent>
@@ -52,7 +52,7 @@ function AccordionQuestions() {
                                         </AccordionContent>
                                    </AccordionItem>
                               </Accordion>
-                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer'>Agar do&apos;konlarim soni 10 tadan ortiq bo&apos;lsa, chegirmalar taqdim etiladimi?</AccordionTrigger>
                                         <AccordionContent>
@@ -60,7 +60,7 @@ function AccordionQuestions() {
                                         </AccordionContent>
                                    </AccordionItem>
                               </Accordion>
-                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                               <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer'>Tariflar bir-biridan nimalar bilan farq qiladi?</AccordionTrigger>
                                         <AccordionContent>
@@ -68,7 +68,7 @@ function AccordionQuestions() {
                                         </AccordionContent>
                                    </AccordionItem>
                               </Accordion>
-                                <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' data-aos="fade-up">
+                                <Accordion type="single" collapsible className='bg-gray-100 p-2 px-4 rounded-2xl border-2 border-gray-300' >
                                    <AccordionItem value="item-1">
                                         <AccordionTrigger className='text-xl font-semibold cursor-pointer'>GILAMCHI tizimiga ulanish va tarifni tanlash uchun nima qilish kerak?</AccordionTrigger>
                                         <AccordionContent>

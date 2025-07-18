@@ -45,8 +45,8 @@ function Achievements() {
                <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                     <div>
                          <div className="text-center mb-16">
-                              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Natijalar va Erishilgan Yutuqlar</h2>
-                              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" >Natijalar va Erishilgan Yutuqlar</h2>
+                              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" >
                                    Foydalanuvchi faolligi, mahsulot hajmi va umumiy samaradorlikdagi o‘sish — bu raqamlar platformamizning real biznesga qanday ta’sir qilayotganini yaqqol ko‘rsatadi.
                               </p>
 
@@ -54,7 +54,7 @@ function Achievements() {
                          </div>
                          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                               {Achieve.map((item) => (
-                                   <div key={item.id} className='text-center flex flex-col gap-5' data-aos="fade-up">
+                                   <div key={item.id} className='text-center flex flex-col gap-5' >
                                         <h2 className='text-6xl font-semibold'><CountUp end={item.number} duration={3} />{item.sign}</h2>
                                         <h4 className='text-xl font-medium'>{item.title}</h4>
                                         <p>{item.subtitle}</p>

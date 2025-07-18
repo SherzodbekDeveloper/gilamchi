@@ -49,14 +49,14 @@ export default function TestimonialsCarousel() {
      return (
           <section id='yutuglar' className='py-20 bg-white scroll-mt-24 px-4 sm:px-6 lg:px-8 '>
                <div className="text-center mb-16 ">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Mijozlarimiz fikri</h2>
-                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" >Mijozlarimiz fikri</h2>
+                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" >
                          Platformamizdan foydalangan mijozlarimiz qanday taassurot olganlarini quyida o‘qing.
                     </p>
 
 
                </div>
-               <Swiper className='max-w-7xl mx-auto ' data-aos="fade-up"
+               <Swiper className='max-w-7xl mx-auto ' 
                     modules={[Autoplay, Pagination]}
                     spaceBetween={30}
                     autoplay={{

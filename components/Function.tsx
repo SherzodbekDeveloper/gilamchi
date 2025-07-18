@@ -43,8 +43,8 @@ export default function Function() {
           <section id="funksiyalar" className="py-20 bg-white scroll-mt-24">
                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">Mahsulot Funksiyalari</h2>
-                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up">
+                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" >Mahsulot Funksiyalari</h2>
+                         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto" >
                               Nima uchun minglab mijozlar bizni tanlaganini bilib oling
                          </p>
                     </div>
@@ -53,7 +53,7 @@ export default function Function() {
                          {advantages.map((advantage, index) => {
                               const IconComponent = advantage.icon
                               return (
-                                   <Card data-aos="fade-up"
+                                   <Card 
                                         key={index}
                                         className="group hover:shadow-xl !transition-all duration-300 ease-linear hover:-translate-y-1 bg-white border-0"
                                    >
