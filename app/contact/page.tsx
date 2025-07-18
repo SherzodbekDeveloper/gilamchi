@@ -1,13 +1,16 @@
 "use client"
+
+import type React from "react"
 import { toast } from "sonner"
 
-
-const handleSubmit = async (e) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
-  const name = e.target.name.value
-  const email = e.target.email.value
-  const phone = e.target.phone.value
-  const message = e.target.message.value
+
+  const formData = new FormData(e.currentTarget)
+  const name = formData.get("name") as string
+  const email = formData.get("email") as string
+  const phone = formData.get("phone") as string
+  const message = formData.get("message") as string
 
   const botToken = "7725458563:AAGBKzkw1ABOdBcwDEQ75BQmsioQzELLtlI"
   const chatId = "6564682532"
@@ -34,7 +37,7 @@ const handleSubmit = async (e) => {
       }),
     })
     toast("Xabaringiz yuborildi!")
-    e.target.reset()
+    e.currentTarget.reset()
   } catch (err) {
     toast("Xatolik yuz berdi!")
     console.error(err)
@@ -76,7 +79,7 @@ function Page() {
           />
           <textarea
             name="message"
-            rows="5"
+            rows={5}
             placeholder="Xabaringizni shu yerga yozing"
             className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
