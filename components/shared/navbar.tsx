@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react"
 import { Button } from "../ui/button"
 import { MenuIcon, X } from "lucide-react"
 import Image from "next/image"
+import { Separator } from "../ui/separator"
 
 interface NavLink {
      href: string
@@ -18,6 +19,14 @@ const navLinks: NavLink[] = [
      { href: "/contact", label: 'Aloqa' },
      { href: "/agreement", label: 'Foydalanish shartlari' },
      { href: "/privacy", label: 'Maxfiylik siyosati' },
+]
+
+const navInfo: NavLink[] = [
+     { href: "tel:+998919449491", label: "91 944-94-91" },
+     { href: "tel:+998995575230", label: "99 557-52-30" },
+     { href: "#", label: "Instagram" },
+     { href: "#", label: 'Telegram' },
+     { href: "https://github.com/dotsoftuz/", label: 'Github' },
 ]
 
 function Navbar() {
@@ -85,18 +94,18 @@ function Navbar() {
                          </Link>
 
                          <div className="flex gap-2 items-center">
-                         <nav className="hidden lg:flex space-x-8 mr-4" role="navigation">
-                              {navLinks.slice(0, 4).map((link) => (
-                                   <Link
-                                        key={link.href}
-                                        href={link.href}
-                                        className="text-gray-700 text-lg font-medium hover:text-blue-900 transition-colors duration-200 relative group"
-                                   >
-                                        {link.label}
-                                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-900 transition-all duration-200 group-hover:w-full" />
-                                   </Link>
-                              ))}
-                         </nav>
+                              <nav className="hidden lg:flex space-x-8 mr-4" role="navigation">
+                                   {navLinks.slice(0, 4).map((link) => (
+                                        <Link
+                                             key={link.href}
+                                             href={link.href}
+                                             className="text-gray-700 text-lg font-medium hover:text-blue-900 transition-colors duration-200 relative group"
+                                        >
+                                             {link.label}
+                                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-900 transition-all duration-200 group-hover:w-full" />
+                                        </Link>
+                                   ))}
+                              </nav>
                               <a href="https://www.gilamchi.uz/" target="_blank" className="md:block hidden">
                                    <Button variant={'link'}>
                                         Hisobga kirish
@@ -144,13 +153,33 @@ function Navbar() {
                          </div>
 
                          <nav className="flex-1 px-6 py-2">
-                              <ul className="space-y-2">
+                              <span className="text-gray-700 text-sm">GILAMCHI</span>
+
+                              <ul className="space-y-2 mt-1">
                                    {navLinks.map((link, index) => (
                                         <li key={link.href}>
                                              <Link
                                                   href={link.href}
                                                   onClick={handleMobileLinkClick}
-                                                  className="block text-lg font-medium text-gray-700 hover:text-blue-900 transition-colors duration-200 "
+                                                  className="block text-lg font-medium text-black hover:text-blue-900 transition-colors duration-200 "
+                                                  style={{
+                                                       animationDelay: `${index * 50}ms`,
+                                                  }}
+                                             >
+                                                  {link.label}
+                                             </Link>
+                                        </li>
+                                   ))}
+                              </ul>
+                              <Separator className="my-5" />
+                              <span className="text-gray-700 text-sm">Bizni kuzatib boring:</span>
+                              <ul className="space-y-2 mt-1">
+                                   {navInfo.map((link, index) => (
+                                        <li key={link.label}>
+                                             <Link
+                                                  href={link.href}
+                                                  onClick={handleMobileLinkClick}
+                                                  className="block text-lg font-medium text-black hover:text-blue-900 transition-colors duration-200 "
                                                   style={{
                                                        animationDelay: `${index * 50}ms`,
                                                   }}
@@ -161,6 +190,7 @@ function Navbar() {
                                    ))}
                               </ul>
                          </nav>
+
 
                          <div className="p-6 border-t md:hidden block border-gray-100">
                               <a href="https://www.gilamchi.uz/" target="_blank" onClick={handleMobileLinkClick}>
