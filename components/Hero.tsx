@@ -82,7 +82,7 @@ export default function Hero() {
 
                               </div>
 
-                              <div className="" data-aos="fade-up" data-aos-duration="2000">
+                              <div className="" data-aos="fade-up" data-aos-duration="1500">
                                    <div className="relative w-full max-w-2xl lg:mx-0 mx-auto">
                                         <Image
                                              src="/chart.png"
