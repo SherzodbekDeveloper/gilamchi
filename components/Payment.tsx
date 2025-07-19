@@ -11,42 +11,49 @@ import Link from "next/link"
 const Tarif = [
      {
           id: 1,
-          tarif: "Kichik Biznes",
-          cost: "100 000",
+          tarif: "Free Trial (Sinov rejasi)",
+          subtitle: 'Gilamchi.uz imkoniyatlarini sinab ko‘rish uchun bepul reja.',
+
+          cost: "0",
           feautures: [
-               "Asosiy funksiyalar",
-               "Cheklangan ombor hajmi",
-               "1 ta foydalanuvchi",
-               "Hisobot eksport qilish",
-               "Yillik yangilanishlar",
-               "Qo'llab-quvvatlash (email)",
+               "Gilam savdosini boshqarish",
+               "Kvadrat metr bo‘yicha hisob yuritish",
+               "Savdo jarayonlarini avtomatlashtirish",
+               "Asosiy hisobotlar (sotuvlar va mahsulot qoldig‘i)",
+               "Mijozlar bazasi (CRM)",
+               "Ma’lumotlar xavfsizligi",
           ],
      },
      {
           id: 2,
           tarif: "Standart",
-          cost: "250 000",
+          subtitle: 'Kichik va o‘rta savdo subyektlari uchun.',
+          cost: "300 000",
           feautures: [
-               "To'liq funksiyalar",
-               "O'rtacha ombor hajmi",
-               "Mobil ilova",
-               "3 ta foydalanuvchi",
-               "Kundalik hisobotlar",
-               "Texnik yordam (chat)",
+               "Gilam savdosini boshqarish",
+               "Savdo jarayonlarini avtomatlashtirish",
+               "Real vaqt tahlillari",
+               "Asosiy hisobotlar va eksport",
+               "Mijozlar bilan aloqa boshqaruvi (CRM)",
+               "Ombor qoldiqlari va inventarizatsiya",
+               "Ma’lumotlar xavfsizligi",
+               "Texnik qo‘llab-quvvatlash",
           ],
      },
      {
           id: 3,
           tarif: "Biznes",
-          cost: "500 000",
+          subtitle: 'Katta savdo korxonalari uchun kengaytirilgan imkoniyatlar.',
+          cost: "400 000",
           feautures: [
-               "Barcha funksiyalar",
-               "Cheksiz ombor",
-               "Shaxsiy menejer",
-               "Qo'shimcha imkoniyatlar",
-               "Jamoa boshqaruvi",
-               "Analitika vositalari",
-               "24/7 texnik yordam",
+               "Barcha Standart funksiyalar",
+               "Ko‘p filiallar (bir nechta joyda savdo)",
+               "Xodimlar uchun rollar va huquqlar",
+               "Qo‘shimcha agentlar uchun modul (agentlar hisobi, hisob-kitobi)",
+               "Ko‘p foydalanuvchili tizim",
+               "Xizmat ko‘rsatish tarixini yuritish",
+               "Yiliga umumiy tahlil va hisobotlar",
+               "VIP texnik qo‘llab-quvvatlash (tezkor yordam)",
           ],
      },
 ]
@@ -123,12 +130,18 @@ function Payment() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                          {Tarif.map((item) => (
                               <Card key={item.id} className="py-6 px-6 flex flex-col gap-4 rounded-3xl" >
-                                   <h3 className="text-xl font-semibold">{item.tarif}</h3>
+                                   <div className="h-15">
+                                        <h3 className="text-xl font-semibold">{item.tarif}</h3>
+                                        <p className="text-sm text-gray-500">{item.subtitle}</p>
+                                   </div>
                                    <h2 className="text-4xl font-bold">
-                                        {calculateMonthlyPrice(calculatePrice(item.cost))} <span className="text-sm font-medium text-black/55">UZS / 30 kun</span>
+                                        {calculateMonthlyPrice(calculatePrice(item.cost))} <span className="text-sm font-medium text-black/55">
+                                             {parseInt(item.cost) == 0 ? 'UZS / 30 kun' : 'UZS / 30 Kun'}
+
+                                        </span>
                                    </h2>
                                    {
-                                        billingPeriod == 'yearly' ?
+                                        billingPeriod == 'yearly' && parseInt(item.cost) !== 0 ?
                                              <p className="text-black/55"><span className="font-bold text-lg">{calculatePrice(item.cost)}</span> UZS / 365 kun</p> : ''
                                    }
                                    <Link href="https://app.gilamchi.uz/" target="_blank">
@@ -150,7 +163,7 @@ function Payment() {
                               </Card>
                          ))}
                     </div>
-                  
+
                </div>
           </section>
      )
