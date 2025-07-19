@@ -131,7 +131,7 @@ function Payment() {
                                         billingPeriod == 'yearly' ?
                                              <p className="text-black/55"><span className="font-bold text-lg">{calculatePrice(item.cost)}</span> UZS / 365 kun</p> : ''
                                    }
-                                   <Link href="https://www.gilamchi.uz/" target="_blank">
+                                   <Link href="https://app.gilamchi.uz/" target="_blank">
                                         <Button variant={"link"} className="rounded-3xl font-bold py-5 text-xl">
                                              Obuna bo&apos;lish
                                         </Button>

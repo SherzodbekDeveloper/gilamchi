@@ -106,7 +106,7 @@ function Navbar() {
                                         </Link>
                                    ))}
                               </nav>
-                              <a href="https://www.gilamchi.uz/" target="_blank" className="md:block hidden">
+                              <a href="https://app.gilamchi.uz/" target="_blank" className="md:block hidden">
                                    <Button variant={'link'}>
                                         Hisobga kirish
                                    </Button>
@@ -193,7 +193,7 @@ function Navbar() {
 
 
                          <div className="p-6 border-t md:hidden block border-gray-100">
-                              <a href="https://www.gilamchi.uz/" target="_blank" onClick={handleMobileLinkClick}>
+                              <a href="https://app.gilamchi.uz/" target="_blank" onClick={handleMobileLinkClick}>
                                    <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white rounded-full">
                                         Hisobga kirish
                                    </Button>

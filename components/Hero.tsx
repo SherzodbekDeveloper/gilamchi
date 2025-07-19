@@ -39,7 +39,7 @@ export default function Hero() {
 
                          <div className="flex gap-2 items-center flex-wrap justify-start" data-aos="fade-up" data-aos-duration="2500"
 >
-                              <a href="https://www.gilamchi.uz/" target="_blank">
+                              <a href="https://app.gilamchi.uz/" target="_blank">
                                    <Button  variant={'link'} className="bg-white text-black hover:bg-white/80 md:text-xl text-lg"
                                         size="lg" 
                                    >
